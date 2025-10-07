@@ -133,6 +133,16 @@ header {
 
 .home-section {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.bread-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.home-section {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 110px 175px;
@@ -413,4 +423,35 @@ footer {
   border-top: 1px solid var(--muted);
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+/* for other visualation */
+img {
+  width: 100%;
+  max-width: 300px; /* or whatever fits your layout */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  header,
+  .home-section,
+  .about-section,
+  .contact-section {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    margin: 20px auto;
+  }
+
+  .product-item {
+    min-height: auto;
+  }
 }
