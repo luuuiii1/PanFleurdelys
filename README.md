@@ -1,2 +1,2 @@
 # PanFleurdelys
-This website is only for WS1 — Business Shop Project that made by Luui learned with AI
+This website is only for WS1 — Business Shop Project that made by Luui 
